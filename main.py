@@ -1,4 +1,4 @@
-# This example requires the 'message_content' intent.
+#!/usr/bin/env python
 from discord.ext import tasks, commands
 from datetime import datetime
 import discord
