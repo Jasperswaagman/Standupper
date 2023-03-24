@@ -91,7 +91,7 @@ async def send_msg() -> None:
     done_button.callback = done_button_re
     next_button.callback = next_button_re
 
-    view = discord.ui.View()
+    view = discord.ui.View(timeout=None)
     view.add_item(done_button)
     view.add_item(next_button)
     await channel.send(embeds=[embed], view=view)
